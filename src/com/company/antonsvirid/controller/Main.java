@@ -6,7 +6,7 @@ import com.company.antonsvirid.view.Printer;
 import java.util.Scanner;
 
 public class Main {
-    public static void main(String[] args) {
+    public static void main(String[] args) throws Exception {
         Scanner scanner = new Scanner(System.in);
 
         System.out.println("This program will displays the sign of the Zodiac, corresponding to selected date.");

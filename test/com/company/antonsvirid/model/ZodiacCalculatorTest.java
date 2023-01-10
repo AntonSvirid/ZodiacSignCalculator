@@ -17,7 +17,7 @@ public class ZodiacCalculatorTest {
     }
 
     @Test
-    public void testCalculatorOfDateForCancer() throws Exception {
+    public void testCalculatorOfDateForCancerInJune() throws Exception {
         int day = 29;
         int month = 6;
 
@@ -26,6 +26,18 @@ public class ZodiacCalculatorTest {
 
         assertEquals(expected, actual);
     }
+
+    @Test
+    public void testCalculatorOfDateForCancerInJuly() throws Exception {
+        int day = 9;
+        int month = 7;
+
+        String expected = "For date 9.7.YEAR Zodiac is Cancer";
+        String actual = ZodiacCalculator.calculatorOfDate(day, month);
+
+        assertEquals(expected, actual);
+    }
+
     @Test
     public void testCalculatorOfDateForPisces() throws Exception {
         int day = 23;

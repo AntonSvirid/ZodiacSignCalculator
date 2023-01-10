@@ -1,7 +1,6 @@
 package com.company.antonsvirid.model;
 
 import org.junit.Test;
-
 import static org.junit.Assert.assertEquals;
 
 public class ZodiacCalculatorTest {
@@ -23,6 +22,16 @@ public class ZodiacCalculatorTest {
         int month = 6;
 
         String expected = "For date 29.6.YEAR Zodiac is Cancer";
+        String actual = ZodiacCalculator.calculatorOfDate(day, month);
+
+        assertEquals(expected, actual);
+    }
+    @Test
+    public void testCalculatorOfDateForAquarius() throws Exception {
+        int day = 27;
+        int month = 1;
+
+        String expected = "For date 27.1.YEAR Zodiac is Aquarius";
         String actual = ZodiacCalculator.calculatorOfDate(day, month);
 
         assertEquals(expected, actual);

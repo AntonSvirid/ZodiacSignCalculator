@@ -51,7 +51,7 @@ public class ZodiacCalculatorTest {
     }
 
     @Test
-    public void testCalculatorOfDateForPisces() throws Exception {
+    public void testCalculatorOfDateForPiscesInFebruary() throws Exception {
         int day = 23;
         int month = 2;
 
@@ -60,6 +60,18 @@ public class ZodiacCalculatorTest {
 
         assertEquals(expected, actual);
     }
+
+    @Test
+    public void testCalculatorOfDateForPiscesInMarch() throws Exception {
+        int day = 2;
+        int month = 3;
+
+        String expected = "For date 2.3.YEAR Zodiac is Pisces";
+        String actual = ZodiacCalculator.calculatorOfDate(day, month);
+
+        assertEquals(expected, actual);
+    }
+
 
     @Test
     public void testCalculatorOfDateForAquarius() throws Exception {

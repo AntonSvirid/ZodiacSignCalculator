@@ -6,7 +6,7 @@ import static org.junit.Assert.assertEquals;
 public class ZodiacCalculatorTest {
 
     @Test
-    public void testCalculatorOfDateForTaurus() throws Exception {
+    public void testCalculatorOfDateForTaurusInMay() throws Exception {
         int day = 11;
         int month = 5;
 
@@ -15,6 +15,18 @@ public class ZodiacCalculatorTest {
 
         assertEquals(expected, actual);
     }
+
+    @Test
+    public void testCalculatorOfDateForTaurusInApril() throws Exception {
+        int day = 28;
+        int month = 4;
+
+        String expected = "For date 28.4.YEAR Zodiac is Taurus";
+        String actual = ZodiacCalculator.calculatorOfDate(day, month);
+
+        assertEquals(expected, actual);
+    }
+
 
     @Test
     public void testCalculatorOfDateForCancerInJune() throws Exception {

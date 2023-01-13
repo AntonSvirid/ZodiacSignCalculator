@@ -106,6 +106,18 @@ public class ZodiacCalculatorTest {
         assertEquals(expected, actual);
     }
 
+    @Test
+    public void testCalculatorOfDateForAriesInApril() throws Exception {
+        int day = 2;
+        int month = 4;
+
+        String expected = "For date 2.4.YEAR Zodiac is Aries";
+        String actual = ZodiacCalculator.calculatorOfDate(day, month);
+
+        assertEquals(expected, actual);
+    }
+
+
 
 
 

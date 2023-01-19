@@ -172,6 +172,18 @@ public class ZodiacCalculatorTest {
         assertEquals(expected, actual);
     }
 
+    @Test
+    public void testCalculatorOfDateForVirgoInSeptember() throws Exception {
+        int day = 4;
+        int month = 9;
+
+        String expected = "For date 4.9.YEAR Zodiac is Virgo";
+        String actual = ZodiacCalculator.calculatorOfDate(day, month);
+
+        assertEquals(expected, actual);
+    }
+
+
 
 
     @Test(expected = Exception.class)

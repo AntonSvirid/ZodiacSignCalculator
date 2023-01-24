@@ -16,6 +16,7 @@ public class ZodiacCalculator {
     private static final String FOR_DATE = "For date ";
     private static final String ZODIAC_IS = ".YEAR Zodiac is ";
     private static final String POINT = ".";
+  //  private static final String DEFAULT_RESULT = "Your date is not correct, please restart program and try again.";
 
     public static String calculatorOfDate (int day, int month) throws Exception{
         String zodiac = "";

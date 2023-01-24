@@ -183,6 +183,41 @@ public class ZodiacCalculatorTest {
         assertEquals(expected, actual);
     }
 
+    @Test
+    public void testCalculatorOfDateForLibraInSeptember() throws Exception {
+        int day = 24;
+        int month = 9;
+
+        String expected = "For date 24.9.YEAR Zodiac is Libra";
+        String actual = ZodiacCalculator.calculatorOfDate(day, month);
+
+        assertEquals(expected, actual);
+    }
+
+    @Test
+    public void testCalculatorOfDateForLibraInOctober() throws Exception {
+        int day = 6;
+        int month = 10;
+
+        String expected = "For date 6.10.YEAR Zodiac is Libra";
+        String actual = ZodiacCalculator.calculatorOfDate(day, month);
+
+        assertEquals(expected, actual);
+    }
+
+    @Test
+    public void testCalculatorOfDateForScorpioInOctober() throws Exception {
+        int day = 26;
+        int month = 10;
+
+        String expected = "For date 26.10.YEAR Zodiac is Scorpio";
+        String actual = ZodiacCalculator.calculatorOfDate(day, month);
+
+        assertEquals(expected, actual);
+    }
+
+
+
 
 
 
